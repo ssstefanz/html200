@@ -15,13 +15,16 @@ function enterInfo() {
         }
       }
       account = account - w;
-      if (account < 50) {
-        alert(`Warning. Your account has dropped to $${account}.`);
-        continue;
-      }
       if (account < 0) {
         account = 0;
         alert('Your account has reached $0. Please add funds in order to withdraw more.');
+      }
+      else if (account < 50) {
+        alert(`Warning. Your account has dropped to $${account}.`);
+        continue;
+      }
+      else {
+        continue;
       }
     } else if (x == 'D') {
         d = Number(prompt('Enter deposit amount.'));
