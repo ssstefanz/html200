@@ -44,13 +44,3 @@ function enterInfo() {
       }
   }
 }
-
-
-
-
-
-//function withDraw() {
-  //let input = prompt('Enter an amount to withdraw');
-
-
-//}
